@@ -112,5 +112,5 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           file: ci\build\${{ steps.package.outputs.package-name }}.zip
           asset_name: ${{ steps.package.outputs.package-name }}.zip
-          tag: ${{ github.ref }}
+          tag: ${{ github.ref_name }}
           overwrite: true
